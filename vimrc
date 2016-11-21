@@ -1,6 +1,16 @@
+" Make vim more useful {{{
+set nocompatible
+" }}}
+
+" Syntax highlighting {{{
+set t_Co=256
+set background=dark
+syntax on
+colorscheme Tomorrow-Night-Bright
+" }}}
+
 execute pathogen#infect()
 filetype plugin indent on
-syntax on
 
 map <C-n> :NERDTreeToggle<CR>ss
 
@@ -24,8 +34,8 @@ set shiftwidth=2
 set laststatus=2
 set smartindent
 inoremap jk <esc>
-colorscheme Tomorrow-Night-Bright
 set tabstop=2
+set laststatus=2
 
 "add parenthesis autocomplete
 inoremap ( ()<ESC>ha
@@ -36,5 +46,4 @@ inoremap ' ''<ESC>ha
 
 " Remap :W to :w {{{
 command! W w
-
 " }}}

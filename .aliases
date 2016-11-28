@@ -11,3 +11,9 @@ alias gs="git status"
 alias gc="git commit"
 alias gac="git add -A && git commit -m"
 alias push="git push"
+
+# Delete .DS_Store files
+alias cleanup_dsstore="find . -name '.DS_Store' -type f -ls -delete"
+
+# File size
+alias fs="stat -f \"%z bytes\""

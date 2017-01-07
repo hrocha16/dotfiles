@@ -1,0 +1,4 @@
+prompt_symbol="▲"
+line="$prompt_symbol \W "
+
+PS1="$line"

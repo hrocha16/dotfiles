@@ -12,7 +12,7 @@ colorscheme Tomorrow-Night-Bright
 execute pathogen#infect()
 filetype plugin indent on
 
-map <C-n> :NERDTreeToggle<CR>ss
+nmap <C-n> :NERDTreeToggle<CR>
 
 " Disable Arrow Keys in insert mode
 imap <up> <nop>

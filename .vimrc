@@ -1,4 +1,4 @@
-" Make vim more useful {{{
+"Make vim more useful {{{
 set nocompatible
 " }}}
 
@@ -6,7 +6,8 @@ set nocompatible
 set t_Co=256
 set background=dark
 syntax on
-colorscheme 0x7A69_dark
+" colorscheme 0x7A69_dark
+colorscheme Tomorrow-Night-bright
 " }}}
 
 execute pathogen#infect()
@@ -40,11 +41,6 @@ au BufNewFile,BufRead *.py:
     \ set expandtab
     \ set autoindent
     \ set fileformat=unix
-
-au BufNewFile,BufRead *.js, *.html, *.css:
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
 
 " Configuration
 " FastEscape {{{
